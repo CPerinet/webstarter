@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i,900');
+
+.p {
+	font-size: 17px;
+	color: $color-neutral-700;
+	line-height: 2;
+	letter-spacing: 0;
+	font-weight: normal;
+	text-transform: none;
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	@extend .p;
+}
+
+* {
+	font-family: inherit;
+}
+
+.h1 {
+	font-size: 45px;
+
+	@media (max-width: $tablet) {
+		font-size: 40px;
+		line-height: 1.5;
+	}
+}
+
+.sub-h1 {
+	font-size: 22px;
+}
+
+.h2 {
+	font-size: 30px;
+	line-height: 1.5;
+
+	@media (max-width: $tablet) {
+		font-size: 20px;
+	}
+}
+
+.h3 {
+	font-size: 30px;
+	font-weight: bold;
+
+	@media (max-width: $tablet) {
+		font-size: 25px;
+	}
+}
+
+.h4 {
+	font-weight: 900;
+}
+
+.t-nav {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.125em;
+	color: $color-neutral-600;
+}
+
+.t-quote {
+	font-family: 'Abril Fatface', cursive;
+	color: $color-light;
+	text-align: center;
+	font-size: 30px;
+}
+
+.t-legend {
+	color: $color-neutral-600;
+	font-style: italic;
+}
+
+.t-small {
+	color: $color-accent;
+	text-transform: uppercase;
+	font-size: 13px;
+	letter-spacing: 0.25em;
+	text-align: center;
+	font-weight: bold;
+
+	@media (max-width: $tablet) {
+		font-size: 13px;
+	}
+}
+
+.t-light {
+	color: $color-light;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

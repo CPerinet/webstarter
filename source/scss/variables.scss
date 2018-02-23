@@ -1,0 +1,41 @@
+$mobile : 500px;
+$tablet : 840px;
+
+$color-dark : darken(#2a3340, 3%);
+$color-light : #fff;
+
+$color-success : #b8e20a;
+$color-warning : #fd730e;
+$color-danger : #ff7558;
+$color-info : #08c5fb;
+
+$color-neutral-10 : #fbfbfb;
+$color-neutral-50 : #f8f9f9;
+$color-neutral-100 : #f2f3f4;
+$color-neutral-130 : lighten(#b0bec5, 20%);
+$color-neutral-150 : lighten(#b0bec5, 10%);
+$color-neutral-200 : #b0bec5;
+$color-neutral-300 : #90a4ae;
+$color-neutral-400 : #78909c;
+$color-neutral-500 : #607d8b;
+
+$color-neutral-600 : darken(#3f4753, 3%);
+$color-neutral-700 : darken(#353d4a, 3%);
+$color-neutral-800 : darken(#2e3744, 3%);
+
+$color-accent : #059afd;
+
+$color-accent-light-3 : lighten($color-accent, 3%);
+$color-accent-light-5 : lighten($color-accent, 5%);
+$color-accent-dark-3 : darken($color-accent, 3%);
+$color-accent-dark-5 : darken($color-accent, 5%);
+$color-accent-dark-7 : darken($color-accent, 7%);
+
+$shadow-s: 0 0 20px rgba($color-dark, 0.05);;
+$shadow-m: 0 0 20px rgba($color-dark, 0.15);
+$shadow-l: 0 0 40px rgba($color-dark, 0.15);
+$shadow-xl: 0 0 60px rgba($color-dark, 0.1);
+
+$gradient-1-color-1 : $color-accent;
+$gradient-1-color-2 : #FF2334;
+$gradient-1-color-2 : $color-accent-dark-5;

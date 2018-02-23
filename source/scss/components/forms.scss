@@ -1,0 +1,175 @@
+.form {
+	.title-h1 {
+		@extend .h2;
+		margin: 50px 0 0 0;
+	}
+
+	&-control {
+		display: block;
+		margin: 30px 0;
+
+		&:first-child {
+			margin-top: 10px;
+		}
+
+		&:last-child {
+			margin-bottom: 10px;
+		}
+
+		&.required {
+			label::after {
+				content: '';
+				height: 5px;
+				width: 5px;
+				background-color: $color-danger;
+				border-radius: 50%;
+				margin-left: 5px;
+				display: block;
+			}
+		}
+
+		label {
+			@extend .t-small;
+
+			position: relative;
+			color: white;
+			display: flex;
+			align-items: center;
+			padding-left: 2px;
+			margin-bottom: 8px;
+		}
+
+		.btn,
+		input,
+		textarea,
+		select {
+			font-size: 16px;
+			color: rgba(white, .7);
+			line-height: 1.6;
+			border: solid 1px darken($color-dark, 3%);
+			outline: none;
+			border-radius: 3px;
+			background: $color-dark;
+			padding: 13px 17px;
+			display: block;
+			resize: vertical;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			width: 100%;
+
+			&::placeholder, &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &:-moz-placeholder {
+				font-style: italic;
+			}
+
+			&:focus {
+				border-color: $color-accent;
+			}
+
+			&[type="submit"] {
+				@extend .t-small;
+				background-color: $color-dark;
+				font-size: 12px;
+				font-weight: bold;
+				color: $color-light;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+
+				&:hover {
+					background-color: darken($color-dark, 10%);
+				}
+			}
+
+			&[type="checkbox"] {
+				display: none;
+
+				& + label {
+					@extend .p;
+					color: white;
+
+					&::before {
+						content: '';
+						height: 15px;
+						width: 15px;
+						background: $color-dark;
+						border: solid 1px darken($color-dark, 3%);
+						border-radius: 50%;
+						margin-right: 20px;
+					}
+				}
+
+				&:checked + label::before {
+					background: $color-accent;
+				}
+			}
+		}
+
+		.btn {
+			@extend .t-small;
+			background-color: $color-dark;
+			font-size: 12px;
+			font-weight: bold;
+			color: $color-light;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				background-color: darken($color-dark, 10%);
+			}
+		}
+	}
+
+	.submit {
+		.form-control {
+			margin-bottom: 0;
+		}
+
+		.form-control input {
+			background: $color-accent;
+			padding: 60px 0;
+			border: none;
+			border-radius: 0;
+
+			transition: all .3s;
+
+			&:hover {
+				background: $color-accent-dark-3;
+			}
+		}
+	}
+
+	.panel .submit {
+		.form-control {
+			margin: 0;
+
+			input {
+				padding: 30px 0;
+			}
+		}
+	}
+}
+
+.btn {
+	@extend .t-small;
+	background-color: $color-accent;
+	font-weight: normal;
+	color: rgba(white, 0.8) !important;
+	border-radius: 100px !important;
+	cursor: pointer;
+	transition: none !important;
+	padding: 5px 20px;
+	
+	&:hover {
+		background-color: darken($color-accent, 3%);
+	}
+
+	&.outline {
+		background: none;
+		color: inherit !important;
+		border: solid 1px rgba(white, 0.8);
+
+		&:hover {
+			color: $color-dark !important;
+			background-color: rgba(white, 0.8);
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import 'variables';
+@import 'utils/reset';
+@import 'utils/align';
+
+@import 'components/wrappers';
+@import 'components/type';
+@import 'components/forms';
+@import 'components/loader';
+@import 'components/nav';
+
+@import 'pages/home';
+
+* {
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+
+	&::selection {
+		color: white !important;
+		background: $color-dark !important;
+	}
+}
+
+html {
+	background: darken($color-dark, 5%);
+}
+
+body {
+	background-color: white;
+	transition: background-color 0.1s ease-in-out;
+	min-height: 100vh;
+}
