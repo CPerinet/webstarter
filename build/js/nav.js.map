@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../source/js/nav.js"],"names":[],"mappings":";;AAAA,EAAE,mBAAF,EAAuB,KAAvB,CAA6B,YAAM;AAC/B,MAAE,cAAF,EAAkB,WAAlB,CAA8B,MAA9B;AACA,MAAE,SAAF,EAAa,WAAb,CAAyB,MAAzB;AACH,CAHD","file":"nav.js","sourcesContent":["$('#toggle-container').click(() => {\n    $(\"#nav_content\").toggleClass('open')\n    $(\"#toggle\").toggleClass('open')\n})"]}
